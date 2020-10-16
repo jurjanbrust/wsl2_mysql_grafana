@@ -36,7 +36,6 @@ def processMessage():
 
 for item in range(0, nrOfMessages, 1):
     processMessage()
-    time.sleep(0.1)
+    time.sleep(1)
 
 print("All Done")
-

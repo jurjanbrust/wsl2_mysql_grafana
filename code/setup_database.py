@@ -33,7 +33,7 @@ if(mySql_droptable):
         print(ex)
 
 try:
-    cursor.execute("CREATE TABLE "+ mySql_tableName + " (id INT AUTO_INCREMENT PRIMARY KEY, counter INT, temperature CHAR(5), time TIMESTAMP, latitude FLOAT, longitude FLOAT, rssi FLOAT, dev_id VARCHAR(20), app_id VARCHAR(20), hardware_serial VARCHAR(20) )")
+    cursor.execute("CREATE TABLE "+ mySql_tableName + " (id INT AUTO_INCREMENT PRIMARY KEY, counter INT, temperature INT, time TIMESTAMP, latitude FLOAT, longitude FLOAT, rssi FLOAT, dev_id VARCHAR(20), app_id VARCHAR(20), hardware_serial VARCHAR(20) )")
     print("Created table" + mySql_tableName)
 except Exception as ex:
     print(ex)
